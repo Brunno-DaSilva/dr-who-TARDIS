@@ -51,8 +51,18 @@ class DivOne extends React.Component {
 class DivTwo extends React.Component {
   render() {
     return (
-      <div className="div-two" onClick={this.props.changeIt}>
-        <h3> {this.props.tardis.name}</h3>
+      <div className="div-two">
+        <DivThree tardis={this.props.tardis} changeIt={this.props.changeIt} />
+      </div>
+    );
+  }
+}
+
+class DivThree extends React.Component {
+  render() {
+    return (
+      <div className="div-three" onClick={this.props.changeIt}>
+        <h3>{this.props.tardis.name}</h3>
       </div>
     );
   }
