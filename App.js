@@ -7,11 +7,31 @@ class App extends React.Component {
         caps: false,
       },
     };
+
+    this.changeIt = this.changeIt.bind(this);
   }
+
+  changeIt = () => {
+    if (this.state.tardis.caps) {
+      this.setState({
+        tardis: {
+          name: this.state.tardis.name.toLowerCase(),
+          caps: false,
+        },
+      });
+    } else {
+      this.setState({
+        tardis: {
+          name: this.state.tardis.name.toUpperCase(),
+          caps: true,
+        },
+      });
+    }
+  };
 
   render() {
     return (
-      <div>
+      <div onClick={this.changeIt}>
         <h3> {this.state.tardis.name}</h3>
       </div>
     );
