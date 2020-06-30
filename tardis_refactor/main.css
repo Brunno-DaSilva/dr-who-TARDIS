@@ -20,7 +20,7 @@ div {
   margin: auto;
   width: 80%;
   box-shadow: 0 0 8px rgb(46, 46, 46);
-  padding: 1em;
+  padding: 1.5em;
   background: white;
 }
 
@@ -35,6 +35,10 @@ div {
   background-color: #87c1da !important;
 }
 
+.div-three:nth-child(odd) {
+  background-color: #faf1a2 !important;
+}
+
 .div-three {
-  background-color: #89b9ce !important;
+  background-color: #8ee7f6 !important;
 }
