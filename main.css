@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+body {
+  margin: 1em;
+  padding: 1em;
+  font-family: "Poppins", sans-serif;
+  background: #feffe9;
+  text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  color: #4e4e4e;
+}
+
+div {
+  margin: auto;
+  width: 80%;
+  box-shadow: 0 0 8px dodgerblue;
+  padding: 1em;
+  background: white;
+}
