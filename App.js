@@ -31,7 +31,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="div-app">
         <DivOne tardis={this.state.tardis} changeIt={this.changeIt} />
       </div>
     );
@@ -41,7 +41,17 @@ class App extends React.Component {
 class DivOne extends React.Component {
   render() {
     return (
-      <div onClick={this.props.changeIt}>
+      <div className="div-one">
+        <DivTwo tardis={this.props.tardis} changeIt={this.props.changeIt} />
+      </div>
+    );
+  }
+}
+
+class DivTwo extends React.Component {
+  render() {
+    return (
+      <div className="div-two" onClick={this.props.changeIt}>
         <h3> {this.props.tardis.name}</h3>
       </div>
     );
