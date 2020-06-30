@@ -31,8 +31,18 @@ class App extends React.Component {
 
   render() {
     return (
-      <div onClick={this.changeIt}>
-        <h3> {this.state.tardis.name}</h3>
+      <div>
+        <DivOne tardis={this.state.tardis} changeIt={this.changeIt} />
+      </div>
+    );
+  }
+}
+
+class DivOne extends React.Component {
+  render() {
+    return (
+      <div onClick={this.props.changeIt}>
+        <h3> {this.props.tardis.name}</h3>
       </div>
     );
   }
